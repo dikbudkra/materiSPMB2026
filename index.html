@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Membuka Berkas...</title>
-    <script>
-        // Langsung pindah ke lokasi baru
-        window.location.replace("https://drive.google.com/drive/folders/19yxLRzu0n0T22aM2KoLdN1OkxohP7DHO?usp=sharing");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sistem Operasional Dikbud</title>
+    <style>
+        /* Reset margin dan padding agar benar-benar penuh */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%;
+            overflow: hidden; 
+            background-color: #ffffff;
+        }
+
+        /* Mengatur container agar fleksibel */
+        #app-container { 
+            width: 100%; 
+            height: 100vh; 
+            display: flex;
+        }
+
+        /* Iframe dengan izin fitur lengkap */
+        iframe {
+            width: 100%; 
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
 </head>
-<body style="background: white;">
-    </body>
+<body>
+
+    <div id="app-container">
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbynWXjvhDA_AfRIgkJirK45xoQyUCUl2O3h7n1gJj0a1l3E4wiLrw1Sraytz1MAHRm9/exec"
+            allow="geolocation; microphone; camera; clipboard-write; self; unsafe-inline; unsafe-eval"
+            loading="eager">
+        </iframe>
+    </div>
+
+</body>
 </html>
